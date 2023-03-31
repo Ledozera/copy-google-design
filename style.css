@@ -126,14 +126,13 @@ main .input input {
 }
 
 .footer {
-  bottom: 5%;
+  bottom: 6%;
   background-color: #f2f2f2;
   position: absolute;
   font-size: 15px;
   color: #70757a;
   padding: 15px 30px;
   width: 100%;
-  border-bottom: 13px solid #c1c1c1;
 }
 
 .nav-footer {
@@ -161,4 +160,47 @@ main .input input {
 
 .nav a:hover {
   border-bottom: 1px solid #70757a;
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 90%;
+  }
+  header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+  }
+  .grid {
+    height: 15px;
+    width: 15px;
+  }
+  main {
+    height: 50vh;
+  }
+  main h1 {
+    padding-bottom: 20px;
+  }
+  main .input {
+    width: 300px;
+    padding: 10px;
+    align-items: center;
+  }
+  main input {
+    width: 150px;
+  }
+  main .input .btns {
+    display: flex;
+  }
+  .buttons button {
+    font-size: 12px;
+  }
+  .footer {
+    bottom: 0%;
+  }
+  .nav {
+    display: grid;
+    gap: 10px;
+  }
 }
